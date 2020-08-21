@@ -12,6 +12,12 @@ Para mais informações acesse a página de integração:
 
 [Integração via API](https://www.boletobancario.com/boletofacil/integration/integration.html) 
 
+## Como adicionar a lib no projeto:
+[https://pub.dev/packages/juno_direct_checkout/install](https://pub.dev/packages/juno_direct_checkout/install)
+
+## Exemplo de uso
+[https://pub.dev/packages/juno_direct_checkout/example](https://pub.dev/packages/juno_direct_checkout/example)
+
 ## Configurações do ambiente
 
 Por questões de dependência do fornecedor das bibliotecas criptográficas para Android a SDK minima é ```21``` e IOS ```11```
