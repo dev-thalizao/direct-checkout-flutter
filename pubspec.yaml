@@ -1,7 +1,6 @@
 name: juno_direct_checkout
 description: SDK para criptografia e validação de dados do cartão de crédito para integração com a API de pagamentos da Juno/BoletoBancário.
 version: 1.0.1
-author:  Diefferson Santos <diefferson.sts@gmail.com>
 homepage: https://github.com/tamojuno/juno_direct_checkout_flutter
 
 environment:
