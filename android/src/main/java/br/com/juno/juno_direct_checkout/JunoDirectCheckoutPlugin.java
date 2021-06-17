@@ -51,11 +51,14 @@ public class JunoDirectCheckoutPlugin implements FlutterPlugin, MethodCallHandle
     switch (call.method) {
       case "init": 
         Boolean prod = true;
+        final String token = call.argument("public_token");
+
         if (call.hasArgument("prod")) {
           prod = call.argument("prod");
         }
+
         InitializeDirectCheckoutListener initializeListener = new InitializeDirectCheckoutListener(result);
-        DirectCheckout.initialize(context, prod, initializeListener);
+        DirectCheckout.initialize(context, prod, token, initializeListener);
         break;
       case "getCardHash":
         CodigoHashDirectCheckoutListener listener = new CodigoHashDirectCheckoutListener(result);
