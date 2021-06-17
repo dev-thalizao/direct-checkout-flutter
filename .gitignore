@@ -9,3 +9,6 @@ build/
 .vscode/
 *.iml
 *.lock
+android/.project
+
+example/android/app/.project
