@@ -59,7 +59,8 @@ public class SwiftJunoDirectCheckoutPlugin: NSObject, FlutterPlugin {
             result(FlutterError(code: "isValidCardDataError", message: error.localizedDescription, details: nil))
           }
         case "getCardType":
-          result(card.getType())
+          let cardType = card.getType()?.rawValue
+          result(cardType)
         default:
           result(FlutterMethodNotImplemented)
       }
